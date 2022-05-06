@@ -25,7 +25,8 @@ const HeadingWrapper = styled(Box)(
   align-items: center;
   justify-content: space-between;
   color: ${theme.palette.text.primary};
-  margin-bottom: ${theme.spacing(3)}
+  margin-top: ${theme.spacing(3)};
+  margin-bottom: ${theme.spacing(3)};
 `,
 );
 

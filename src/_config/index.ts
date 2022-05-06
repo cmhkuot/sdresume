@@ -1,7 +1,7 @@
 import jsonData from './data.json';
 
-export * as favicon from './favicon.ico';
 export * as authorImage from './author.jpeg';
+export * as favicon from './favicon.ico';
 
 export const authorName = jsonData.authorName;
 export const appName = jsonData.appName;

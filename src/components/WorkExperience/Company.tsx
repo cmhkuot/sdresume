@@ -6,7 +6,7 @@ function Company({ name, position, startDate, endDate, description }: Omit<IComp
   const theme = useTheme();
   return (
     <CompanyCard>
-      <Typography component="h3" variant="h5">
+      <Typography component="h3" variant="h5" fontWeight="bold">
         {name}
       </Typography>
       <Typography variant="caption" gutterBottom>
