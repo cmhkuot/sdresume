@@ -1,6 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
-import { appLocale, appName, appUrl, authorImage, authorName, favicon, GAID } from '@config';
-import { data } from '@content/Header';
+import { appDescription, appName, appUrl, authorImage, authorName, favicon, GAID } from '@config';
 
 function isValid(value: string | string[]) {
   return typeof value === 'string' && value.length > 0;
@@ -8,25 +7,29 @@ function isValid(value: string | string[]) {
 
 export default class AppDocument extends Document {
   render() {
+    const locale = this.props.locale;
     return (
-      <Html lang={appLocale}>
+      <Html lang={locale}>
         <Head>
           <link rel="icon" href={favicon.default.src} />
           <meta httpEquiv="Content-type" content="text/html; charset=utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <meta name="description" content={data.description} />
+          <meta name="description" content={appDescription} />
           <link rel="canonical" href={appUrl} />
           <meta name="keywords" content="resume,development,developer" />
           <meta property="og:type" content="website" />
-          <meta property="og:locale" content="vi_VN" />
+          <meta property="og:locale" content={locale === 'vi' ? 'vi_VN' : 'en_US'} />
           <meta property="og:title" content={appName} />
           <meta property="og:url" content={appUrl} />
-          <meta property="og:description" content={data.description} />
+          <meta property="og:description" content={appDescription} />
           <meta property="og:image" content={authorImage.default.src} />
           <meta name="twitter:creator" content={authorName} />
           <meta name="twitter:title" content={appName} />
-          <meta name="twitter:description" content={data.description} />
+          <meta name="twitter:description" content={appDescription} />
           <meta name="twitter:image" content={authorImage.default.src} />
+          <link rel="alternate" href={appUrl} hrefLang="x-default" />
+          <link rel="alternate" href={appUrl} hrefLang="en" />
+          <link rel="alternate" href={appUrl} hrefLang="vi" />
           {/* for Google Analytics */}
           {isValid(GAID) && (
             <>

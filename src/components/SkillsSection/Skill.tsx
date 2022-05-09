@@ -1,5 +1,5 @@
 import Li from '@components/Li';
-import { ISkill } from '@content/Skills';
+import { ISkill } from '@interfaces/Skills';
 import { Box, Typography, useTheme } from '@mui/material';
 
 function Skill({ name, descriptions }: ISkill) {

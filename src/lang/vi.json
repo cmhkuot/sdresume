@@ -1,0 +1,268 @@
+{
+    "header": {
+        "heading": "Xin chào, mình là Sơn Đỗ",
+        "description": "<b>Hiện đang là lập trình viên Web </b>.<br/>Thử thách nhiều - gặt hái nhiều."
+    },
+    "workExperience": {
+        "title": "Work Experience",
+        "list": [
+            {
+                "name": "Digiworld",
+                "position": "Web Developer",
+                "startDate": "2021",
+                "endDate": "present",
+                "description": "Digiworld is company distributes ICT, Healthcare and Consumer Goods at Vietnam.",
+                "projects": [
+                    {
+                        "title": {
+                            "text": "DStore",
+                            "githubLink": null,
+                            "otherLink": null
+                        },
+                        "role": "FE/BE developer",
+                        "description": "Online store for brands distributes by Digiworld",
+                        "startDate": "2021",
+                        "endDate": "present",
+                        "which": [
+                            "UI/UX",
+                            "SEO",
+                            "New features (promotions, contents management,...)",
+                            "Maintenance"
+                        ],
+                        "techStack": [
+                            "Laravel",
+                            "VueJS",
+                            "Wordpress",
+                            "MySQL"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "TripX",
+                "position": "Web Developer (freelancer)",
+                "startDate": "2020",
+                "endDate": "2021",
+                "description": "TripX is a company providing self-driving car rental and car rental registration.",
+                "projects": [
+                    {
+                        "title": {
+                            "text": "TripX",
+                            "githubLink": null,
+                            "otherLink": null
+                        },
+                        "role": "Mobile/Web developer",
+                        "description": "System for car rental registration and self-driving car rental booking.",
+                        "startDate": "2020",
+                        "endDate": "2021",
+                        "which": [
+                            "Update UI for web/mobile app",
+                            "Update features for management system",
+                            "Integrate new payment gateway (MoMo)",
+                            "Maintenance/bug fix"
+                        ],
+                        "techStack": [
+                            "Laravel",
+                            "React/React Native",
+                            "MongoDB",
+                            "Firebase",
+                            "Google Maps APIs",
+                            "MoMo Payment Gateway APIs"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Antking",
+                "position": "Web Developer",
+                "startDate": "2016",
+                "endDate": "2021",
+                "description": "Outsourcing company",
+                "projects": [
+                    {
+                        "title": {
+                            "text": "Nodes",
+                            "githubLink": null,
+                            "otherLink": null
+                        },
+                        "role": "FE/BE developer",
+                        "description": "A system that helps companies find and hire experts for what companies need",
+                        "startDate": "2020",
+                        "endDate": "2021",
+                        "which": [
+                            "UI/UX modules",
+                            "Manage meeting event",
+                            "Email notification",
+                            "Integrate MS Team/Zoom APIs"
+                        ],
+                        "techStack": [
+                            "Laravel",
+                            "VueJS",
+                            "MariaDB",
+                            "Microsoft Graph/Zoom APIs"
+                        ]
+                    },
+                    {
+                        "title": {
+                            "text": "Carsharing",
+                            "githubLink": null,
+                            "otherLink": null
+                        },
+                        "role": "FE/BE developer",
+                        "description": "Vehicle book system for employees of the company. App support for drivers, employees and admin companies.",
+                        "startDate": "2019",
+                        "endDate": "2021",
+                        "which": [
+                            "Analysis and design database",
+                            "Manage booking vehicles & employees",
+                            "Map/Live tracking for vehicles",
+                            "Maintenance/bug fix"
+                        ],
+                        "techStack": [
+                            "Laravel",
+                            "React Native",
+                            "MariaDB",
+                            "Firebase",
+                            "Google Maps APIs"
+                        ]
+                    },
+                    {
+                        "title": {
+                            "text": "RMS",
+                            "githubLink": null,
+                            "otherLink": null
+                        },
+                        "role": "FE/BE/Mobile developer",
+                        "description": "Management and registration system for employee transportation of companies/hotels. Allow employees buy tickets to go home or to workplace between different shifts working.",
+                        "startDate": "2018",
+                        "endDate": "2021",
+                        "which": [
+                            "Maintenance/bug fix"
+                        ],
+                        "techStack": [
+                            "Laravel",
+                            "React Native",
+                            "MariaDB",
+                            "Google Maps APIs"
+                        ]
+                    },
+                    {
+                        "title": {
+                            "text": "Ally's Basket",
+                            "githubLink": null,
+                            "otherLink": null
+                        },
+                        "role": "FE/BE developer",
+                        "description": "Ally's Basket is an Australia based e-commerce platform that provides Australian products that are shipped internationally.",
+                        "startDate": "2019",
+                        "endDate": "2021",
+                        "which": [
+                            "B2B, B2C sale types",
+                            "UI/UX for online store",
+                            "Order/Shipping module",
+                            "APIs support WMS",
+                            "Integrate Stripe payment gateway",
+                            "Maintenance/bug fix"
+                        ],
+                        "techStack": [
+                            "Prestashop",
+                            "Laravel",
+                            "MariaDB"
+                        ]
+                    },
+                    {
+                        "title": {
+                            "text": "RTLS",
+                            "githubLink": null,
+                            "otherLink": null
+                        },
+                        "role": "FE/BE/Mobile developer",
+                        "description": "It is Malaysia's oil factory management system, to co-develop an RTLS solution using Bluetooth technology to monitoring people, assets and sensors.",
+                        "startDate": "2019",
+                        "endDate": "2019",
+                        "which": [
+                            "UI/UX",
+                            "Notifications/Alert",
+                            "Map/Live tracking",
+                            "Manage factory design diagram",
+                            "Manage interact with map (gateway points, restriction zones, floors...)"
+                        ],
+                        "techStack": [
+                            "Laravel",
+                            "Leaflet (map lib)",
+                            "MySQL"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "skills": {
+        "title": "Skills",
+        "list": [
+            {
+                "name": "Frond-end",
+                "descriptions": [
+                    "HTML",
+                    "CSS/SCSS",
+                    "SEO",
+                    "Bootstrap",
+                    "Tailwind",
+                    "MUI",
+                    "PageSpeed optimization"
+                ]
+            },
+            {
+                "name": "PHP",
+                "descriptions": [
+                    "Laravel/Lumen",
+                    "Bagisto",
+                    "Prestashop",
+                    "Wordpress",
+                    "Drupal",
+                    "Shopify"
+                ]
+            },
+            {
+                "name": "Javascript",
+                "descriptions": [
+                    "React/React Native",
+                    "NextJS",
+                    "VueJS",
+                    "Typescript",
+                    "Jquery",
+                    "Webpack",
+                    "npm"
+                ]
+            },
+            {
+                "name": "Database",
+                "descriptions": [
+                    "MariaDB/MySQL",
+                    "MongoDB",
+                    "Redis/Memcached"
+                ]
+            },
+            {
+                "name": "Third party APIs",
+                "descriptions": [
+                    "MoMo",
+                    "Stripe",
+                    "Paypal",
+                    "Google services",
+                    "Zoom",
+                    "MS Graph (MS Team)"
+                ]
+            },
+            {
+                "name": "DevOps (beginner)",
+                "descriptions": [
+                    "Nginx",
+                    "Apache",
+                    "Docker",
+                    "Firebase"
+                ]
+            }
+        ]
+    }
+}

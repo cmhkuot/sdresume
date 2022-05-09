@@ -4,6 +4,9 @@
   "appLocale": "vi",
   "appTimeZone": "Asia/Ho_Chi_Minh",
   "appUrl": "https://sondo.dev/",
+  "GAID": "",
+  "description": "Sơn Đỗ's resume",
   "email": "dhson8396@gmail.com",
-  "GAID": ""
+  "github": "https://github.com/gh-sondh",
+  "linkedin": "https://www.linkedin.com/in/dhson8396"
 }

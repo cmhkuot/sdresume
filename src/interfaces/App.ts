@@ -1,6 +1,6 @@
-import { EmotionCache } from '@emotion/react';
 import { AppProps } from 'next/app';
+import { EmotionCache } from '@emotion/react';
 
-export default interface IApp extends AppProps {
+export interface IApp extends AppProps {
   emotionCache?: EmotionCache;
 }

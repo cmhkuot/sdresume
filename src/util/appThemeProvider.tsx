@@ -1,5 +1,5 @@
-import { ThemeProvider, createTheme, useMediaQuery } from '@mui/material';
 import { ReactNode, useEffect, useMemo, useState } from 'react';
+import { createTheme, ThemeProvider, useMediaQuery } from '@mui/material';
 
 import { ColorModeContext } from './colorModeContext';
 

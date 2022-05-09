@@ -1,4 +1,4 @@
-import { ICompany } from '@content/Work-Experience';
+import { ICompany } from '@interfaces/WorkExperience';
 import { Typography, useTheme } from '@mui/material';
 import { styled } from '@mui/material/styles';
 

@@ -1,21 +1,35 @@
+import GroupContact from '@components/GroupContact/GroupContact';
+import LangSwitch from '@components/LangSwitch';
 import ThemeSwitch from '@components/ThemeSwitch/ThemeSwitch';
-import { authorImage, authorName } from '@config';
-import { IHeader } from '@content/Header';
-import { Avatar, Box, Typography } from '@mui/material';
+import { authorImage, authorName, email, github, linkedin } from '@config';
+import { IHeader } from '@interfaces/Header';
+import { Avatar, Box, Divider, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 export default function Header({ heading, description }: IHeader) {
   return (
-    <>
+    <Box component="header">
       <HeadingWrapper>
-        <HeadingText variant="h1">{heading}</HeadingText>
-        <ThemeSwitch />
+        <HeadingText variant="h1" sx={theme => ({ [theme.breakpoints.down('sm')]: { fontSize: '2.375rem' } })}>
+          {heading}
+        </HeadingText>
+        {/* <Box
+          sx={theme => ({
+            [theme.breakpoints.down('sm')]: { display: 'flex', flexDirection: 'column', alignItems: 'center' },
+          })}
+        >
+          <LangSwitch />
+          <ThemeSwitch />
+        </Box> */}
       </HeadingWrapper>
       <DescriptionWrapper>
         <Avatar sx={{ width: 64, height: 64 }} src={authorImage.default.src} alt={authorName} />
-        <Typography ml={2} mb={0} paragraph dangerouslySetInnerHTML={{ __html: description }}></Typography>
+        <Box ml={2}>
+          <Typography mb={0} paragraph dangerouslySetInnerHTML={{ __html: description }}></Typography>
+          <GroupContact {...{ email, github, linkedin }} sizeIcon="small" />
+        </Box>
       </DescriptionWrapper>
-    </>
+    </Box>
   );
 }
 
@@ -48,6 +62,6 @@ const DescriptionWrapper = styled(Box)(
   display: flex;
   align-items: center;
   color: ${theme.palette.text.primary};
-  margin-bottom: ${theme.spacing(3)}
+  margin-bottom: ${theme.spacing(3)};
 `,
 );

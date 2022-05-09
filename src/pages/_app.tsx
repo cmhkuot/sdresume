@@ -2,14 +2,14 @@ import Head from 'next/head';
 import { appName } from '@config';
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
-import IApp from '@interfaces/App';
+import { IApp } from '@interfaces/App';
 import { CssBaseline } from '@mui/material';
 import AppThemeProvider from '@util/appThemeProvider';
 
 const clientSideEmotionCache = createCache({ key: 'css', prepend: true });
 
 export default function App(props: IApp) {
-  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+  const { Component, pageProps, emotionCache = clientSideEmotionCache } = props;
 
   return (
     <CacheProvider value={emotionCache}>

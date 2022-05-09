@@ -21,7 +21,10 @@
     "baseUrl": "./",
     "paths": {
       "@config": [
-        "src/_config/index.ts"
+        "src/config/index.ts"
+      ],
+      "@lang": [
+        "src/lang/index.ts"
       ],
       "@content/*": [
         "src/_content/*"

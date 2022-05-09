@@ -1,20 +1,27 @@
-import { authorName } from '@config';
-import { Box, styled, Typography } from '@mui/material';
+import GroupContact from '@components/GroupContact';
+import LangSwitch from '@components/LangSwitch';
+import ThemeSwitch from '@components/ThemeSwitch';
+import { email, github, linkedin } from '@config';
+import { Box, Divider } from '@mui/material';
 
 export function Footer() {
   return (
-    <Box
-      component="footer"
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'flex-end',
-        height: '100px',
-      }}
-    >
-      <Typography variant="overline">Build by {authorName}</Typography>
-      <Typography variant="caption">Build by {authorName}</Typography>
-    </Box>
+    <>
+      <Divider />
+      <Box
+        component="footer"
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100px',
+        }}
+      >
+        <GroupContact {...{ email, github, linkedin }} sizeIcon="medium" />
+        <ThemeSwitch />
+        <LangSwitch />
+      </Box>
+    </>
   );
 }

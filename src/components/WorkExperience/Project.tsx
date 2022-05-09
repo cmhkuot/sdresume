@@ -1,6 +1,6 @@
 import Li from '@components/Li';
 import TitleTooltip from '@components/TitleTooltip';
-import { IProject } from '@content/Work-Experience';
+import { IProject } from '@interfaces/WorkExperience';
 import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 

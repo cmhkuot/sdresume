@@ -1,5 +1,5 @@
 import Section from '@components/Section';
-import { IWorkExperience } from '@content/Work-Experience';
+import { IWorkExperience } from '@interfaces/WorkExperience';
 import { Typography, useTheme } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
