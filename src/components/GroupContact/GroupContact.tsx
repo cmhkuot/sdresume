@@ -4,7 +4,7 @@ import { Box, IconButton } from '@mui/material';
 
 export default function GroupContact({ email, github, linkedin, sizeIcon }: IGroupContact) {
   return (
-      <Box>
+    <Box>
       <IconButton href={`mailto:${email}`} size={sizeIcon} aria-label="email">
         <Email fontSize="inherit" />
       </IconButton>
